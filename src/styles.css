@@ -58,6 +58,66 @@ nav a.active {
 }
 
 /* everywhere else */
+
 * {
   font-family: Arial, Helvetica, sans-serif;
+}
+input {
+  margin: 0.5em;
+  border: none;
+  border-bottom: 2px solid #336699;
+  border-radius: 2px;
+  text-align: center;
+}
+input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #00A689;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+  border-radius: 6px;
+  background-color: #EBEBEB;
+  padding: 1em 1em 1em 0;
+  margin: 0.2em 0.2em 0.2em -2em;
+  user-select: none;
+}
+li:hover {
+  background-color: #C1E9E2;
+  animation-name: hero-hover-animation;
+  animation-duration: 45ms;
+}
+@keyframes hero-hover-animation {
+  from { background-color: #EBEBEB; }
+  to { background-color: #C1E9E2; }
+}
+li:active {
+  animation-name: onClick-selected-hero;
+  animation-duration: 1s;
+}
+@keyframes onClick-selected-hero {
+  from { background-color: #EBEBEB; }
+  to { background-color: #A4E8DC; }
+}
+.badge {
+  background-color: steelblue;
+  padding: 1em;
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+  margin-right: 1em;
+}
+.detail-field-desc {
+  display: inline-block;
+  min-width: 4em;
+  text-align: right;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+}
+.selected-hero-in-list {
+  background-color: #A4E8DC;
 }

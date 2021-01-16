@@ -1,0 +1,25 @@
+/* MessagesComponent's private CSS styles */
+h2 {
+  color: #C43232;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+button.clear {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #eee;
+  margin-bottom: 12px;
+  border: none;
+  padding: 0.5em 2em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+.message-in-list {
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 6px;
+  background-color: #C7FCFF;
+}
